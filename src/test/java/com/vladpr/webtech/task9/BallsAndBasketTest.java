@@ -22,7 +22,13 @@ public class BallsAndBasketTest {
     ));
 
     @Test
-    public void findWeightTest() {
+    public void findWeight() {
         Assertions.assertEquals(2.5, Main.findWeight(basket.getList()));
+    }
+
+    @Test
+    public void findBlueAmount() {
+        long amount = basket.getList().stream().filter(ball -> ball.getColor().equals(Color.BLUE)).count();
+        Assertions.assertEquals(5, amount);
     }
 }
