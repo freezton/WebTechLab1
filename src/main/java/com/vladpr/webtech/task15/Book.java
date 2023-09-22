@@ -13,6 +13,7 @@ public class Book implements Comparable<Book> {
         this.title = title;
         this.author = author;
         this.price = price;
+        this.isbn = isbn;
     }
 
     @Override

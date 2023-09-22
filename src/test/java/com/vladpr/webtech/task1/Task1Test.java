@@ -16,8 +16,4 @@ class Task1Test {
         Assertions.assertEquals(-9.44943, Main.findResult(-9.61, 14.7), 0.00001);
     }
 
-    @Test
-    void findResultBothNegative() {
-//        Assertions.assertEquals(51.33751, Main.findResult(-33.48, -12.6), 0.00001);
-    }
 }

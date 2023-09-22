@@ -15,4 +15,7 @@ public class Main {
         return resultList;
     }
 
+    public static void main(String[] args) {
+        System.out.println(findResult(-5.5, 3, 1.2));
+    }
 }

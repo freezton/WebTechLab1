@@ -13,7 +13,7 @@ public class ProgrammerBook extends Book {
 
     @Override
     public String toString() {
-        return String.format("[title='%s', author='%s', price='%d', language='%s', level='%d']", super.getTitle(), super.getAuthor(), super.getPrice(), language, level);
+        return String.format("ProgrammerBook=[title='%s', author='%s', price='%d', language='%s', level='%d']", super.getTitle(), super.getAuthor(), super.getPrice(), language, level);
     }
 
     @Override

@@ -1,5 +1,8 @@
 package com.vladpr.webtech.task4;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Main {
 
     private static boolean isPrime(int n) {
@@ -16,11 +19,14 @@ public class Main {
         return true;
     }
 
-    public static void findPrimeNumbers(int[] arr) {
+    public static List<Integer> findPrimeNumbers(int[] arr) {
+        List<Integer> result = new ArrayList<>();
         for (int i = 0; i < arr.length; i++) {
             if (isPrime(arr[i])) {
+                result.add(i);
                 System.out.println(i);
             }
         }
+        return result;
     }
 }
