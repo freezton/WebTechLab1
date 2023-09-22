@@ -28,7 +28,7 @@ public class BallsAndBasketTest {
 
     @Test
     public void findBlueAmount() {
-        long amount = basket.getList().stream().filter(ball -> ball.getColor().equals(Color.BLUE)).count();
+        int amount = Main.findBlueBallAmount(basket.getList());
         Assertions.assertEquals(5, amount);
     }
 }
